@@ -5,9 +5,9 @@
   <subtitle>志不强者智不达，言不信者行不果</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://chimoxuanzhi.coding.me/"/>
   <updated>2018-03-30T15:06:55.559Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://chimoxuanzhi.coding.me/</id>
   
   <author>
     <name>尺墨轩志</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/03/30/hello-world/"/>
-    <id>http://yoursite.com/2018/03/30/hello-world/</id>
+    <link href="http://chimoxuanzhi.coding.me/2018/03/30/hello-world/"/>
+    <id>http://chimoxuanzhi.coding.me/2018/03/30/hello-world/</id>
     <published>2018-03-30T15:06:55.559Z</published>
     <updated>2018-03-30T15:06:55.559Z</updated>
     
@@ -34,10 +34,10 @@
     
     </summary>
     
-      <category term="Web" scheme="http://yoursite.com/categories/Web/"/>
+      <category term="Web" scheme="http://chimoxuanzhi.coding.me/categories/Web/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://chimoxuanzhi.coding.me/tags/Hexo/"/>
     
   </entry>
   
