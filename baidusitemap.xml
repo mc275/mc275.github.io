@@ -5,11 +5,11 @@
     
   <url>
     <loc>http://chimoxuanzhi.coding.me/hello-world.html</loc>
-    <lastmod>2018-03-31T11:26:48.518Z</lastmod>
+    <lastmod>2018-03-31T13:18:51.198Z</lastmod>
     <data>
         <display>
         <title>Hello World</title>
-        <pubTime>2018-03-31T11:26:48.518Z</pubTime>
+        <pubTime>2018-03-31T13:18:51.198Z</pubTime>
         
         <tag>Hexo</tag>
          
@@ -18,21 +18,6 @@
              
               <breadCrumb title="Web" url="http://chimoxuanzhi.coding.me/categories/Web/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://chimoxuanzhi.coding.me/post.html</loc>
-    <lastmod>2018-03-31T11:21:36.034Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2018-03-31T11:21:36.034Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
