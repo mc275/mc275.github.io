@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chimoxuanzhi.coding.me/"/>
-  <updated>2018-03-31T13:18:51.198Z</updated>
+  <updated>2018-04-02T10:54:45.342Z</updated>
   <id>http://chimoxuanzhi.coding.me/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown语法介绍</title>
+    <link href="http://chimoxuanzhi.coding.me/Markdown%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D.html"/>
+    <id>http://chimoxuanzhi.coding.me/Markdown语法介绍.html</id>
+    <published>2018-04-02T02:09:00.000Z</published>
+    <updated>2018-04-02T10:54:45.342Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近准备开始写博客，整理自己学习的技术知识。但手动调整博客的本文格式实在太不美观和geek，因而选择Markdown排版博客内容。Markdown是一种轻量级标记语言，且兼容HTML。可通过标记符号设置文本格式，让作者专注于写作内容，当前的主流博客网站和GitHub版块多采用Markdown。</p><p>Markdown将格式对象主要分为<strong>区块元素</strong>和<strong>区段元素</strong>两部分。区块元素主要包括<em>段落</em>，<em>换行</em>，<em>标题</em>，<em>区块引用</em>，<em>列表</em>和<em>分割线</em>；区段元素包括<em>强调</em>，<em>链接</em>，<em>图片</em>和<em>代码块</em>。</p><a id="more"></a><h1 id="区块元素"><a href="#区块元素" class="headerlink" title="区块元素"></a>区块元素</h1><h2 id="段落和换行"><a href="#段落和换行" class="headerlink" title="段落和换行"></a>段落和换行</h2><p>Markdown中段落是由<em>一个或多个连续的本文组成</em>，段落前后应该有1个以上的空行，单独的换行符不会实现段落换行。如果不想插入空行进行换行，可以在换行符前插入2个以上的空格来实现段落换行。例如：</p><blockquote><p>第一段</p><p>第二段</p></blockquote><p>或</p><blockquote><p>第一段(两空格)<br>第二段</p></blockquote><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>在标题文本前使用“#”，并用空格分割可以创建一级标题。如果需要创建多级标题，可使用不同数量的“#”，最多可创建6级标题。如下所示：</p><blockquote><p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题  </p></blockquote><h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h2><p>Markdown标记区块引用时，在每行的开头添加符号”&gt;”或在每段的第一行开头添加”&gt;”，如下所示：</p><blockquote><p>> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote><p>或</p><blockquote><p>> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote><p>效果如下：</p><blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p></blockquote><p>另外区块引用允许多级嵌套，只需根据层次添加不同数量的”&gt;”。例如：</p><blockquote><p>> 这是第一级引用。<br>><br>> > 这是第二级引用。<br>><br>> 现在回到第一级引用。</p></blockquote><p>效果如下</p><blockquote><p>这是第一级引用。</p><blockquote><p>这是第二级引用。</p></blockquote><p>现在回到第一级引用。</p></blockquote><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>Markdown支持有序列表和无序列表。</p><p><em>无序列表</em>使用“*”，”+”和”-“作为记号，通常放在最左侧，记号与文本间用空格分割。</p><blockquote><p>* 列表1<br>  * 列表2<br>  * 列表3  </p></blockquote><p>效果如下</p><ul><li>列表1</li><li>列表2</li><li>列表3</li></ul><p><em>有序列表</em>使用数字加英文句号作为记号，记号与文本间用空格分割，且有序列表的序号与记号中的数字无关。例如以下两组列表，生成的列表序号相同。</p><blockquote><p>1. 列表1<br>  2. 列表2<br>  3. 列表3  </p></blockquote><blockquote><p>1. 列表1<br>  1. 列表2<br>  1. 列表3  </p></blockquote><p>效果如下</p><ol><li>列表1</li><li>列表2</li><li>列表3</li></ol><p>如果需要在列表中加入区块引用或代码块，则整个区块或代码块需整体缩进4个空格或一个制表符，例如：</p><blockquote><p>* 列表1<br>&nbsp; &nbsp; &nbsp; &nbsp; > 引用内容</p></blockquote><p>效果如下所示</p><ul><li>列表1<blockquote><p>引用内容</p></blockquote></li></ul><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>在单独的一行中使用三个以上的星号”*”，减号“-”或底线”_”来创建分割线，且行内不能再有其他内容。</p><blockquote><p>___<br>  ***<br>  ---</p></blockquote><p>效果如下</p><hr><h1 id="区段元素"><a href="#区段元素" class="headerlink" title="区段元素"></a>区段元素</h1><h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><p>强调包括<strong>斜体</strong>和<strong>加粗</strong>两种方式。</p><p>斜体使用一对“*”包裹需要强调的文字，例如:</p><blockquote><p>*斜体*</p></blockquote><p>其效果为：<em>斜体</em></p><p>加粗使用一对“**”包裹需要强调的文字，例如：</p><blockquote><p>**加粗**</p></blockquote><p>其效果为：<strong>加粗</strong></p><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>标记代码块的方式有两种。一种是通过<strong>缩进</strong>4个空格或1个制表符进行标记；更<strong>常用</strong>的方法是使用反引号将代码块包裹起来，避免无休止的缩进。该方法可指定语言标识，对标记的代码块启用语法着色。例如：</p><blockquote><p>```python<br>import sys<br>img_list_in = open(sys.argv[1])<br>```</p></blockquote><p>效果如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">img_list_in = open(sys.argv[<span class="number">1</span>])</span><br></pre></td></tr></table></figure></p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>Markdown支持两种链接的表示方式：<strong>内联式</strong>和<strong>引用式</strong>。</p><p><strong>内联式</strong>的表示形式为 <em>[text] (URL)</em>。其中，[]中的内容是链接文字，()中的内容是链接地址。例如：</p><blockquote><p>This is [GitHub] (<a href="https://www.github.com" target="_blank" rel="noopener">https://www.github.com</a>) link.</p></blockquote><p>效果如下<br>This is <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a> link.</p><p><strong>引用式</strong>的表示方式为</p><blockquote><p>[text] [id]</p><p>[id]: URL </p></blockquote><p>例如：</p><blockquote><p>This is [GitHub] [github] link.</p><p>[github]: <a href="https://www.github.com" target="_blank" rel="noopener">https://www.github.com</a></p></blockquote><p>效果如下：<br>This is <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a> link.</p><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>Markdown使用与链接相似的语法来插入图片，也可分为内联式和引用式。</p><p>内联式插入图片的语法为：</p><blockquote><p>![text] (URL)</p></blockquote><p>引用式插入图片的语法为：</p><blockquote><p>![text] [id]</p><p>[id]: URL</p></blockquote><p>例如：</p><blockquote><p>![CR7](<a href="http://bestsportsshots.com/wp-content/uploads/2018/01/cr7-power.jpg" target="_blank" rel="noopener">http://bestsportsshots.com/wp-content/uploads/2018/01/cr7-power.jpg</a>)</p></blockquote><p>或</p><blockquote><p>![CR7] [player]</p><p>[player]: <a href="http://bestsportsshots.com/wp-content/uploads/2018/01/cr7-power.jpg" target="_blank" rel="noopener">http://bestsportsshots.com/wp-content/uploads/2018/01/cr7-power.jpg</a></p></blockquote><p>效果如下<br><img src="http://bestsportsshots.com/wp-content/uploads/2018/01/cr7-power.jpg" alt="CR7"></p><p>需要注意的是，Markdown无法指定插入图片的宽高。如果需要，可以使用 &lt;img>标签。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近准备开始写博客，整理自己学习的技术知识。但手动调整博客的本文格式实在太不美观和geek，因而选择Markdown排版博客内容。Markdown是一种轻量级标记语言，且兼容HTML。可通过标记符号设置文本格式，让作者专注于写作内容，当前的主流博客网站和GitHub版块多采用Markdown。&lt;/p&gt;
+&lt;p&gt;Markdown将格式对象主要分为&lt;strong&gt;区块元素&lt;/strong&gt;和&lt;strong&gt;区段元素&lt;/strong&gt;两部分。区块元素主要包括&lt;em&gt;段落&lt;/em&gt;，&lt;em&gt;换行&lt;/em&gt;，&lt;em&gt;标题&lt;/em&gt;，&lt;em&gt;区块引用&lt;/em&gt;，&lt;em&gt;列表&lt;/em&gt;和&lt;em&gt;分割线&lt;/em&gt;；区段元素包括&lt;em&gt;强调&lt;/em&gt;，&lt;em&gt;链接&lt;/em&gt;，&lt;em&gt;图片&lt;/em&gt;和&lt;em&gt;代码块&lt;/em&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://chimoxuanzhi.coding.me/categories/Coding/"/>
+    
+    
+      <category term="Markdown" scheme="http://chimoxuanzhi.coding.me/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
