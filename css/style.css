@@ -995,6 +995,7 @@ a {
 }
 .duoshuo {
   padding: 0 40px;
+  width: inherit !important;
 }
 #SOHUCS {
   padding: 0 40px !important;
