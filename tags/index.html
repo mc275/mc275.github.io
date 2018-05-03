@@ -73,7 +73,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
+        search: false
     }
 </script>
 
@@ -92,6 +92,7 @@
 
 
 </head>
+
 <body>
   <div id="container">
     <div class="left-col">
@@ -109,13 +110,6 @@
         <p class="header-subtitle">志不强者智不达，言不信者行不果</p>
         
 
-        
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
-            <i class="fa fa-times" onclick="resetSearch()"></i>
-            </form>
-            <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -397,6 +391,43 @@
 
 
 
+
+    
+      <!--
+<div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="tags/index.html" data-title="标签" data-url="http://chimoxuanzhi.coding.me/tags/index.html"></div>
+    <script>
+        var duoshuoQuery = {short_name:"&lt;要填的部分&gt;.duoshuo.com"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+-->
+<div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="tags/index.html" data-title="标签" data-url="http://chimoxuanzhi.coding.me/tags/index.html"></div>
+    <div id="SOHUCS" sid="http://chimoxuanzhi.coding.me/tags/index.html"></div>
+    <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+    <script type="text/javascript">
+    window.changyan.api.config({
+      appid: 'cytxAdHJV',
+      conf: 'prod_8d1286219c10cf10211103f95dc9b707'
+    });
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
 
     
     
