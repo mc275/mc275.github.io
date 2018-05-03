@@ -251,6 +251,15 @@
       <time datetime="2018-05-02T07:07:10.018Z" itemprop="datePublished">2018-05-02</time>
 </a>
 
+ 
+    <a href="/hello-world.html#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="hello-world.html" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -320,6 +329,15 @@
       <time datetime="2018-04-02T02:09:00.000Z" itemprop="datePublished">2018-04-02</time>
 </a>
 
+ 
+    <a href="/Markdown语法介绍.html#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="Markdown语法介绍.html" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -437,6 +455,31 @@
         })
     </script>
 
+
+    
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var duoshuoQuery = {short_name:"&lt;要填的部分&gt;.duoshuo.com"};
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'http://static.duoshuo.com/embed.js';
+                    s.async = true; s.charset = 'UTF-8';
+                    (d.head || d.body).appendChild(s);
+                })();
+
+                $(document).ready(function(){
+                    var $duoshuoCount = $(".ds-thread-count");
+                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
+                        var num = $(this).text().replace(/[^0-9]/ig,"");
+                        $(this).siblings(".count-comment").text(num);
+                        $(this).remove();
+                    })
+                })
+            }
+        </script>
+    
+
+     
 
 
 
