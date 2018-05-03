@@ -377,6 +377,9 @@ a {
   #container .duoshuo {
     padding: 0 13px;
   }
+  #container #SOHUCS {
+    padding: 0 13px;
+  }
   #container #disqus_thread {
     padding: 0 13px;
   }
@@ -992,6 +995,10 @@ a {
 }
 .duoshuo {
   padding: 0 40px;
+}
+#SOHUCS {
+  padding: 0 40px !important;
+  width: inherit !important;
 }
 #disqus_thread {
   padding: 0 40px;
